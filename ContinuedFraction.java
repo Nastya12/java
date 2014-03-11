@@ -1,0 +1,37 @@
+package haupt;
+
+class ContinuedFraction {
+	private double denominator, valueFraction;
+	public double calculationFraction(int []arr)
+	{
+		valueFraction=arr[arr.length];
+		for(int i=arr.length;i>arr.length; i--){
+			denominator=arr[arr.length-1]+1/valueFraction;
+			valueFraction=denominator;
+		}
+		return valueFraction;
+	}
+}
+
+class Calculation {
+	@SuppressWarnings("null")
+	public static void main(String[] args)
+	{
+		int mas1[]={1, 2, 3};
+		int mas2[]={1, 1, 4};
+		ContinuedFraction fractionOne = null, fractionSecond = null;
+		double addition, subtraction1, product, division;
+		double fraction1=0;
+		double fraction2=0;
+		fraction1=fractionOne.calculationFraction(mas1);
+		fraction2=fractionSecond.calculationFraction(mas2);
+		addition=fraction1+fraction2;
+		System.out.print("Сложение двух цепных дробей: " + addition);
+		subtraction1=fraction1-fraction2;
+		System.out.print("Вычитание двух цепных дробей: " + subtraction1);
+		product=fraction1*fraction2;
+		System.out.print("Сложение двух цепных дробей: " + product);
+		division=fraction1/fraction2;
+		System.out.print("Сложение двух цепных дробей: " + division);
+	}
+}
