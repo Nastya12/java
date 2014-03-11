@@ -26,12 +26,12 @@ class Calculation {
 		fraction1=fractionOne.calculationFraction(mas1);
 		fraction2=fractionSecond.calculationFraction(mas2);
 		addition=fraction1+fraction2;
-		System.out.print("Сложение двух цепных дробей: " + addition);
+		System.out.print("Addition of two continued fractions: " + addition);
 		subtraction1=fraction1-fraction2;
-		System.out.print("Вычитание двух цепных дробей: " + subtraction1);
+		System.out.print("Subtraction of two continued fractions: " + subtraction1);
 		product=fraction1*fraction2;
-		System.out.print("Сложение двух цепных дробей: " + product);
+		System.out.print("Product of two continued fractions: " + product);
 		division=fraction1/fraction2;
-		System.out.print("Сложение двух цепных дробей: " + division);
+		System.out.print("Division of two continued fractions: " + division);
 	}
 }
